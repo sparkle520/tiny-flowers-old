@@ -1,0 +1,174 @@
+$code_bg: var(--code_bg, #f6f8fa);
+$h1_color: var(--h1_color, #686870);
+$h_color: var(--h_color, #a574d2);
+$h2_color: var(--h2_color, #ff7f50);
+$h3_color: var(--h3_color, #ff7f50);
+$h4_color: var(--h4_color, #ff7f50);
+$h5_color: var(--h5_color, #ff7f50);
+$h6_color: var(--h6_color, #ff7f50);
+$normal_color: var(--normal_color, #4d4949);
+$code_color: var(--code_color, #ffffff);
+
+$blockquote_bg: var(--blockquote_bg, #6261a3a8);
+$blockquote_border: var(--blockquote_bg, #6261a3);
+$blockquote_color: var(--blockquote_color, #ff7300);
+.markdown-body *{
+  font-style: normal;
+}
+@font-face {
+  font-family: "misans";
+  src: url("/src/assets/font/misans.ttf");
+}
+@font-face {
+  font-family: "FiraMath-Regular";
+  src: url("/src/assets/font/FiraMath-Regular.ttf");
+}
+.markdown-body {
+  background: transparent;
+  font-family: 'misans';
+  font-size: 18px;
+  color: $normal_color;
+  overflow-x: scroll;
+  width: 100%;
+  z-index: 10;
+  letter-spacing: 2px;
+  line-height: 1.9em;
+  
+  // 对于表格的美化
+table{
+  border-collapse:collapse;
+  table-layout:auto;
+  width: 80%;
+  border-radius:5px;
+  overflow:hidden;
+  margin: 16px auto;
+  border:none ;
+  border-collapse:collapse;
+  background: transparent;
+  color: $normal_color;
+  thead th {
+    background-color: transparent;
+    color: $normal_color;
+    border-bottom-width: 0;
+    border: none;
+    }
+    td,tr{
+      /* padding: 5px;
+      width: 33%; */
+      background: transparent;
+      border:none;
+      
+      border-bottom:1px $h_color solid ;
+      border-top:1px $h_color solid ;
+      text-align: center;
+      vertical-align:middle;
+      /* font-size: 15px; */
+    
+      &:nth-child(odd){
+        background-color: transparent;
+      }
+      &:nth-child(even){
+        background-color: transparent;
+      
+      }
+    }
+  }
+  
+  
+
+
+  ::selection {
+    color:$code_bg;
+    background-color: $h_color;
+  }
+  strong{
+    color: $h_color;
+  }
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: $h_color;
+  
+  }
+  h2 {
+    font-size: 22px;
+    font-weight: 600;
+    color: $h_color;
+    
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: $h_color;
+    
+  }
+  h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: $h_color;
+   
+  }
+  h5 {
+    font-size: 16px;
+    font-weight: 600;
+    color: $h_color;
+    
+  }
+  h6 {
+    font-size: 15px;
+    font-weight: 600;
+    color: $h_color;
+   
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    border-bottom: none;
+    position: relative;
+    padding: 0;
+  }
+  code {
+    background:$blockquote_bg ;
+    color: $code_color;
+    font-family: 'yahei';
+  }
+  pre>code{
+    color: $normal_color;
+  }
+  blockquote {
+    background-color: transparent;
+    color: $blockquote_color;
+    padding: 8px 16px;
+    border-left: 0.15em solid $blockquote_border;
+  }
+  p {
+  }
+  pre {
+    font-family: "monaco";
+    position: relative;
+    padding-top: 32px;
+    background: $code_bg;
+    &::after {
+      position: absolute;
+      top: 10px;
+      left: 15px;
+      width: 12px;
+      height: 12px;
+      overflow: visible;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 12px;
+      white-space: nowrap;
+      text-indent: 75px;
+      background-color: #fc625d;
+      border-radius: 16px;
+      box-shadow: 20px 0 #fdbc40, 40px 0 #35cd4b;
+      content: attr(codetype);
+    }
+  }
+}
+
+
