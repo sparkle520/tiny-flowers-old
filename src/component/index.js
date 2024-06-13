@@ -1,4 +1,3 @@
-import LeftNavBar from "/src/component/LeftNavBar.vue"
 import Pagination from "/src/component/Pagination.vue"
 import Carousel from "/src/component/Carousel.vue"
 import MusicPlayer from "/src/component/MusicPlayer.vue"
@@ -12,7 +11,6 @@ import TopicLeftInterface from "/src/topic_interface/TopicLeftInterface.vue"
 import TopicTopInterface from "/src/topic_interface/TopicTopInterface.vue"
 import TopicBgInterface from "/src/topic_interface/TopicBgInterface.vue"
 const components = {
-    LeftNavBar,
     Pagination,
     TopNavBar,
     Carousel,

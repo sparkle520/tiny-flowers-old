@@ -431,6 +431,4 @@ $(\\displaystyle\\frac{n}{n^3+n^2}+\\frac{2n}{n^3+n^2}+\\cdots+\\frac{n^2}{n^3+n
 \r
 由夹逼准则可知，$\\displaystyle\\lim_{n\\to\\infty}(\\frac{n}{n^3+1^2}+\\frac{2n}{n^3+2^2}+\\cdots+\\frac{n^2}{n^3+n^2})=\\frac{1}{2}$.\r
 \r
-### 用定积分定义求数列极限  \r
-\r
-hello world`;export{n as default};
+### 用定积分定义求数列极限  `;export{n as default};
