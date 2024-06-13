@@ -314,7 +314,7 @@ $nav_item_hover_color: var(--nav_item_hover_color, #f76700);
    
     .nav_box {
       top: 50%;
-      width: 100%;
+      width: 90%;
       transform: translateY(-50%);
       .logo {
         margin-left: 16px;
